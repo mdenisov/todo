@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Todo</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <meta property="og:url" content="http://">
+        <meta property="og:title" content="Todo">
+        <meta property="og:image" content="https://raw.github.com/addyosmani/todomvc/gh-pages/screenshot.png">
+        <meta property="og:description" content="Helping you select an MV* framework - Todo apps for Backbone.js, Ember.js, AngularJS, Spine and many more">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <script type='text/javascript'>
+            var siteSettings = {
+                debug: true,
+                defImg: 'content/slideshow/3926070102_2c2dabe16a_z.jpg',
+                ajaxUrl: 'data/ajax.php',
+                themeUrl: 'http://localhost/todo/',
+                baseUrl: 'http://localhost/todo/',
+                version: 3
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <header id="header">
+            <div class="header_inner container">
+                
+                <div class="header_top clearfix">
+
+                    <h1>My to do list</h1>
+                    
+                </div>
+               
+            </div>  
+        </header>
+
+        <section id="main">
+            <div class="main_inner container clearfix">
+
+                    <section id="sidebar">
+
+                        <div class="user">
+
+                            <h2>Wendy Wellesley</h2>
+                            
+                            <div class="photo">
+                                <img src="img/1guy.jpg" alt=">Wendy Wellesley"/>
+                            </div>
+
+                            <ul class="unstyled">
+                                <li><a href="">Upload photo</a></li>
+                                <li><a href="">View profile</a></li>
+                                <li><a href="">Settings</a></li>
+                            </ul>
+
+                        </div>
+
+                        <ul id="inbox" class="unstyled lists">
+                            <li><a href=""><i class="icon">&#0106;</i> Inbox</a> <span class="count">0</span></li>
+                        </ul>
+
+                        <ul id="lists" class="unstyled lists">
+                            <li class="inbox"><a href=""><i class="icon">&#0067;</i> Inbox</a> <span class="count"><%- items %></span></li>
+                            <li><a href=""><i class="icon">&#0059;</i> Scheduled</a> <span class="count">123</span> <span class="hot">4</span></li>
+                            <li><a href=""><i class="icon">&#0109;</i> Wish list</a> <span class="count">123</span></li>
+                            <li><a href=""><i class="icon">&#0109;</i> Birthday party</a> <span class="count">123</span></li>
+                            <li class="active"><a href=""><i class="icon">&#0109;</i> Shopping list</a> <span class="count">123</span></li>
+                            <li><a href=""><i class="icon">&#0109;</i> My career</a> <span class="count">123</span></li>
+                        </ul>
+
+                        <ul class="unstyled add-list">
+                            <li>
+                                <a id="add-list" href="">+ Add list</a>
+                                <div id="list-form" style="display: none;">
+                                    <input id="new-list-item" placeholder="List name" autofocus="">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section id="maincontent">
+
+                        <ul class="unstyled list-info">
+                            <li>
+                                <div class="chech">&nbsp;</div>
+                                <div class="name">
+                                    <h2>List</h2>
+                                    <a id="add-task" href="">+ Add task</a>
+
+                                    <div id="task-form">
+                                        <input id="new-todo" placeholder="What needs to be done?" autofocus="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <ul id="todo-list" class="unstyled list">
+                            <li>
+                                <div class="chech"><span class="checkbox"></span></div>
+                                <div class="name">safgasg</div>
+                                <div class="action">
+                                    <i class="icon">&#0058;</i>
+                                    <i class="icon">&#0109;</i>
+                                </div>
+                            </li>
+                            <li class="time">
+                                <div class="chech"><span class="checkbox"></span></div>
+                                <div class="name">asgasgzbvx</div>
+                                <div class="action">
+                                    <i class="icon">&#0058;</i>
+                                    <i class="icon">&#0109;</i>
+                                </div>
+                            </li>
+                            <li class="completed">
+                                <div class="chech"><span class="checkbox checked"></span></div>
+                                <div class="name">xzbx x xb</div>
+                                <div class="action">
+                                    <i class="icon">&#0058;</i>
+                                    <i class="icon">&#0109;</i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chech"><span class="checkbox"></span></div>
+                                <div class="name">sdge e e</div>
+                                <div class="action">
+                                    <i class="icon">&#0058;</i>
+                                    <i class="icon">&#0109;</i>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                <!--<div id="preloader"></div>-->
+                
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer_inner container wrapper clearfix">
+
+            </div>
+        </footer>
+
+        <script data-main="js/app/main" src="js/require.js"></script>
+
+    </body>
+</html>
